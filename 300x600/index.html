@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="ad.size" content="width=300,height=600" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "#";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        var tl = new TimelineMax({ repeat: 1, repeatDelay: 3});
+        // var tl = new TimelineMax();
+        setTimeout(() => {
+          console.log("15sec")
+        }, 15000)
+        setTimeout(() => {
+          console.log("20sec")
+        }, 20000)
+        setTimeout(() => {
+          console.log("30sec")
+        }, 29900)
+
+        tl.to("#schirm", 0.6, { autoAlpha: 0 })
+        .from("#txt01", 0.3, { opacity: 0, scale: 0.4}, "-=0.3")
+        .from('#immune01', 0.4, {scale: 0.7, rotation: -40, opacity: 0}, "-=0.2")
+        .from('#aqua01', 0.5, {scale: 0.7, rotation: 45, x: 60, y: 20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
+        .from('#currant01', 0.5, {scale: 0.4, x: -40, y: 40, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+        .from('#raspberry01', 0.5, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+        .from('#vitality01', 0.5, {scale: 0.7, rotation: -45, x: -60, y: 20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+        .from('#strawberry01', 0.5, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+        .from('#kids01', 0.5, {scale: 0.7, rotation: 50, x: 60, y: -40, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+
+        .from("#corner02", 0.3, { x: 600 }, "+=1.4")
+        .from("#bg02", 0.1, { opacity: 0 })
+        .to("#corner02", 0.3, { x: 446}, "+=0.1")
+        .from("#pack02", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+        .from("#txt02", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+
+        .from("#corner03", 0.3, { x: 600 }, "+=1.4")
+        .from("#bg03", 0.1, { opacity: 0 })
+        .to("#corner03", 0.3, { x: 446}, "+=0.1")
+        // .from("#bg03", 0.1, { opacity: 0 }, "-=0.4")
+        .from("#pack03", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+        .from("#txt03", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+
+        .from("#corner04", 0.3, { x: 600 }, "+=1.4")
+        .from("#bg04", 0.1, { opacity: 0 })
+        .to("#corner04", 0.3, { x: 446}, "+=0.1")
+        // .from("#bg04", 0.1, { opacity: 0 }, "-=0.4")
+        .from("#pack04", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+        .from("#txt04", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+
+        .from("#corner05", 0.3, { x: 600 }, "+=1.4")
+        .from("#bg05", 0.1, { opacity: 0 })
+        .to("#corner05", 0.3, { x: 446}, "+=0.2")
+        // .from("#bg05", 0.1, { opacity: 0 }, "-=0.4")
+        .from("#pack05", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+        .from("#txt05", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+
+        .from("#corner06", 0.4, { x: 600 }, "+=1.4")
+        
+        .from("#bg06", 0.1, { opacity: 0 })
+        .to("#corner06", 0.5, { x: 600})
+        .from("#tick", 0.3, { opacity: 0 }, "-=0.2")
+        .from("#txt06", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
+        .from("#vitrum02", 0.3, { scale: 1.2, opacity: 0 }, "-=0.1")
+        .from("#line02", 0.3, { width: 0 }, "-=0.1")
+        .from('#vitality06', 0.5, {scale: 0.7, rotation: 45,  opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
+        .from('#kids06', 0.5, {scale: 0.7, rotation: 45,  opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
+        .from('#immune06', 0.5, {scale: 0.7, rotation: 45,  opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
+        .from('#aqua06', 0.5, {scale: 0.7, rotation: 45,  opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
+
+        .to("#txt06", 0.3, { scale: 0.6, opacity: 0 }, "+=1.4")
+        .to("#tick", 0.3, { opacity: 0 }, "-=0.3")
+        .to("#line02", 0.3, { width: 0 }, "-=0.3")
+        .to("#vitrum02", 0.3, { scale: 0.58, y: -188 }, "-=0.1")
+        .from("#legal01", 0.3, { opacity: 0, y: 30 }, "-=0.1")
+        .from("#legal02", 0.3, { opacity: 0 }, "-=0.1")
+
+      });
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+      <div class="container">
+
+        <div id="bg01" class="el bg">
+          <img src="bg01.jpg" alt="">
+        </div>
+        <div id="corner01" class="el">
+          <img src="corner01.svg" />
+        </div>
+        <div id="txt01" class="el">
+          <img src="txt01.svg" />
+        </div>
+        <div id="vitrum01" class="el">
+          <img src="vitrum.svg" />
+        </div>
+        <div id="line01" class="el line"></div>
+        <div id="aqua01" class="el">
+          <img src="01aqua.png" />
+        </div>
+        <div id="currant01" class="el">
+          <img src="01currant.png" />
+        </div>
+        <div id="vitality01" class="el">
+          <img src="01vitality.png" />
+        </div>
+        <div id="raspberry01" class="el">
+          <img src="01raspberry.png" />
+        </div>
+        <div id="immune01" class="el">
+          <img src="01immune.png" />
+        </div>
+        <div id="kids01" class="el">
+          <img src="pack_kids.png" />
+        </div>
+        <div id="strawberry01" class="el">
+          <img src="01strawberry.png" />
+        </div>
+        
+        <div id="bg02" class="el bg">
+          <img src="bg02.jpg" alt="">
+        </div>
+        <div id="corner02" class="el corner">
+          <img src="corner02.svg" />
+        </div>
+        <div id="txt02" class="el">
+          <img src="txt02.svg" />
+        </div>
+        <div id="pack02" class="el">
+          <img src="02pack.png" />
+        </div>
+        
+        <div id="bg03" class="el bg">
+          <img src="bg03.jpg" alt="">
+        </div>
+        <div id="corner03" class="el corner">
+          <img src="corner03.svg" />
+        </div>
+        <div id="txt03" class="el">
+          <img src="txt03.svg" />
+        </div>
+        <div id="pack03" class="el">
+          <img src="pack_kids.png" />
+        </div>
+
+        <div id="bg04" class="el bg">
+          <img src="bg04.jpg" alt="">
+        </div>
+        <div id="corner04" class="el corner">
+          <img src="corner04.svg" />
+        </div>
+        <div id="txt04" class="el">
+          <img src="txt04.svg" />
+        </div>
+        <div id="pack04" class="el">
+          <img src="04pack.png" />
+        </div>
+
+        <div id="bg05" class="el bg">
+          <img src="bg05.jpg" alt="">
+        </div>
+        <div id="corner05" class="el corner">
+          <img src="corner05.svg" />
+        </div>
+        <div id="txt05" class="el">
+          <img src="txt05.svg" />
+        </div>
+        <div id="pack05" class="el">
+          <img src="05pack.png" />
+        </div>
+
+        <div id="bg06" class="el bg">
+          <img src="bg01.jpg" alt="">
+        </div>
+        <div id="tick" class="el bg">
+          <img src="tick.svg" alt="">
+        </div>
+        <div id="txt06" class="el">
+          <img src="txt06.svg" />
+        </div>
+        <div id="vitrum02" class="el">
+          <img src="vitrum.svg" />
+        </div>
+        <div id="line02" class="el line"></div>
+        <div id="aqua06" class="el">
+          <img src="01aqua.png" />
+        </div>
+        <div id="vitality06" class="el">
+          <img src="01vitality.png" />
+        </div>
+        <div id="immune06" class="el">
+          <img src="01immune.png" />
+        </div>
+        <div id="kids06" class="el">
+          <img src="pack_kids.png" />
+        </div>
+        <div id="corner06" class="el corner">
+          <img src="corner06.svg" />
+        </div>
+
+        <div id="legal01" class="el corner">
+          <img src="legal1.svg" />
+        </div>
+        <div id="legal02" class="el corner">
+          <img src="legal2.svg" />
+        </div>
+
+
+
+
+        <div id="schirm"></div> 
+      </div>
+    </a>
+  </body>
+</html>
