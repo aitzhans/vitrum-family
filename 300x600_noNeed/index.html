@@ -27,22 +27,15 @@
 
         tl.to("#schirm", 0.6, { autoAlpha: 0 })
         .from("#txt01", 0.3, { opacity: 0, scale: 0.4}, "-=0.3")
-        .from('#immune01', 1.8, {scale: 0.4, rotation: -40, opacity: 0, ease: Elastic.easeOut.config(0.7, 0.3)}, "-=0.2")
-        .from('#aqua01', 1.8, {scale: 0.4, rotation: 45, x: 60, y: 20, opacity: 0, ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
-        .from('#currant01', 1.8, {scale: 0.4, x: -40, y: 40, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
-        .from('#vitality01', 1.8, {scale: 0.4, rotation: -45, x: -60, y: 20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.8")
-        .from('#raspberry01', 1.8, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.8")
-        .from('#strawberry01', 1.8, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
-        .from('#kids01', 1.8, {scale: 0.4, rotation: 50, x: 60, y: -40, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.8")
+        .from('#immune01', 0.4, {scale: 0.7, rotation: -40, opacity: 0}, "-=0.2")
+        .from('#aqua01', 0.5, {scale: 0.7, rotation: 45, x: 60, y: 20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
+        .from('#currant01', 0.5, {scale: 0.4, x: -40, y: 40, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+        .from('#raspberry01', 0.5, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+        .from('#vitality01', 0.5, {scale: 0.7, rotation: -45, x: -60, y: 20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+        .from('#strawberry01', 0.5, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
+        .from('#kids01', 0.5, {scale: 0.7, rotation: 50, x: 60, y: -40, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
 
-        // .from('#aqua01', 0.5, {scale: 0.7, rotation: 45, x: 60, y: 20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
-        // .from('#currant01', 0.5, {scale: 0.4, x: -40, y: 40, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
-        // .from('#raspberry01', 0.5, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
-        // .from('#vitality01', 0.5, {scale: 0.7, rotation: -45, x: -60, y: 20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
-        // .from('#strawberry01', 0.5, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
-        // .from('#kids01', 0.5, {scale: 0.7, rotation: 50, x: 60, y: -40, opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.4")
-
-        .from("#corner02", 0.3, { x: 600 }, "+=1")
+        .from("#corner02", 0.3, { x: 600 }, "+=1.4")
         .from("#bg02", 0.1, { opacity: 0 })
         .to("#corner02", 0.3, { x: 446}, "+=0.1")
         .from("#pack02", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
@@ -51,18 +44,21 @@
         .from("#corner03", 0.3, { x: 600 }, "+=1.4")
         .from("#bg03", 0.1, { opacity: 0 })
         .to("#corner03", 0.3, { x: 446}, "+=0.1")
+        // .from("#bg03", 0.1, { opacity: 0 }, "-=0.4")
         .from("#pack03", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
         .from("#txt03", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
 
         .from("#corner04", 0.3, { x: 600 }, "+=1.4")
         .from("#bg04", 0.1, { opacity: 0 })
         .to("#corner04", 0.3, { x: 446}, "+=0.1")
+        // .from("#bg04", 0.1, { opacity: 0 }, "-=0.4")
         .from("#pack04", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
         .from("#txt04", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
 
         .from("#corner05", 0.3, { x: 600 }, "+=1.4")
         .from("#bg05", 0.1, { opacity: 0 })
         .to("#corner05", 0.3, { x: 446}, "+=0.2")
+        // .from("#bg05", 0.1, { opacity: 0 }, "-=0.4")
         .from("#pack05", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
         .from("#txt05", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
 
@@ -138,7 +134,7 @@
           <img src="txt02.svg" />
         </div>
         <div id="pack02" class="el">
-          <img src="01immune.png" />
+          <img src="02pack.png" />
         </div>
         
         <div id="bg03" class="el bg">
@@ -164,7 +160,7 @@
           <img src="txt04.svg" />
         </div>
         <div id="pack04" class="el">
-          <img src="01vitality.png" />
+          <img src="04pack.png" />
         </div>
 
         <div id="bg05" class="el bg">
@@ -177,7 +173,7 @@
           <img src="txt05.svg" />
         </div>
         <div id="pack05" class="el">
-          <img src="01aqua.png" />
+          <img src="05pack.png" />
         </div>
 
         <div id="bg06" class="el bg">
