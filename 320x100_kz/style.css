@@ -1,0 +1,233 @@
+body,
+body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+}
+
+.container {
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  /* top: 100px;
+  left: 200px; */
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fbfbff;
+  border: 1px #363636 solid;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.el {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.bg {
+  background-color: #fafaff;
+  width: 320px;
+  height: 100px;
+  filter: blur(0px);
+}
+
+#corner01 {
+  width: 740px;
+  left: 161px;
+  top: -2px;
+}
+.corner {
+  width: 512px;
+  /* left: 608px; */
+  left: -104px;
+  top: 0px;
+  /* left: 166px; */
+}
+
+#txt01 {
+  width:121px;
+  left: 15px;
+  top: 39px;
+}
+#vitrum01 {
+  width: 104px;
+  left: 24px;
+  top: 9px;
+}
+#line01 {
+  background-color: #89CFF2;
+  width: 102px;
+  height: 2px;
+  left: 26px;
+  top: 28px;
+}
+
+#aqua01 {
+  width: 39px;
+  left: 187px;
+  top: 9px;
+  /* transform: rotate(-22deg) scale(1.2) translateX(-20px) translateY(-20px); */
+  transform: rotate(-22deg);
+}
+#currant01 {
+  width: 10px;
+  left: 282px;
+  top: 17px;
+}
+#vitality01 {
+  width: 38px;
+  left: 247px;
+  top: 38px;
+  transform: rotate(37deg);
+}
+#raspberry01 {
+  width: 14px;
+  left: 281px;
+  top: 87px;
+}
+#immune01 {
+  width: 58px;
+  left: 211px;
+  top: -5px;
+  transform: rotate(6deg);
+}
+#kids01 {
+  width: 34px;
+  left: 185px;
+  top: 54px;
+  transform: rotate(-28deg);
+}
+#strawberry01 {
+  width: 20px;
+  left: 157px;
+  top: 42px;
+}
+
+
+#txt02 {
+  width: 110px;
+  left: 29px;
+  top: 47px;
+}
+#txt03 {
+  width: 90px;
+  left: 37px;
+  top: 47px;
+}
+#txt04 {
+  width: 141px;
+  left: 20px;
+  top: 47px;
+}
+#txt05 {
+  width: 133px;
+  left: 14px;
+  top: 47px;
+}
+/* 01immune */
+#pack02 {
+  width: 46px;
+  left: 264px;
+  top: 21px;
+}
+/* pack_kids */
+#pack03 {
+  width: 40px;
+  left: 268px;
+  top: 23px;
+}
+/* 01vitality */
+#pack04 {
+  width: 40px;
+  left: 268px;
+  top: 21px;
+}
+/* aqua */
+#pack05 { 
+  width: 38px;
+  left: 269px;
+  top: 21px;
+}
+
+#txt06 {
+  width: 160px;
+  left: 8px;
+  top: 25px;
+}
+#vitrum02 {
+  width: 150px;
+  left: 13px;
+  top: 50px;
+}
+#line02 {
+  width: 152px;
+  left: 13px;
+  top: 80px;
+  height: 2px;
+  background-color: #49ABDC;
+}
+
+#vitality06 {
+  width: 31px;
+  left: 178px;
+  top: 26px;
+}
+#kids06 {
+  width: 32px;
+  left: 211px;
+  top: 26px;
+}
+#immune06 {
+  width: 35px;
+  left: 243px;
+  top: 26px;
+}
+#aqua06 {
+  width: 30px;
+  left: 279px;
+  top: 26px;
+}
+#legal01 {
+  width: 108px;
+  left: 181px;
+  top: 6px;
+}
+#legal02 {
+  width: 120px;
+  left: 18px;
+  top: 32px;
+}
+
+
+
+
+
+
+
+
+#schirm {
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: #fbfbff;
+  background-size: cover;
+  opacity: 1;
+}

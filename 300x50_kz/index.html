@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="ad.size" content="width=336,height=280" />
+    <meta name="ad.size" content="width=300,height=50" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
@@ -19,44 +19,42 @@
 
         tl.to("#schirm", 0.6, { autoAlpha: 0 })
         .from("#txt01", 0.3, { opacity: 0, scale: 0.4}, "-=0.3")
-        .from('#immune01', 1.8, {scale: 0.4, rotation: -40, opacity: 0, ease: Elastic.easeOut.config(0.7, 0.3)}, "-=0.2")
-        .from('#aqua01', 1.8, {scale: 0.4, rotation: 45, x: 40, y: 20, opacity: 0, ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
-        .from('#currant01', 1.8, {scale: 0.4, x: 40, y: -40, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
-        .from('#vitality01', 1.8, {scale: 0.4, rotation: 45, x: 40, y: 20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.7")
-        .from('#raspberry01', 1.8, {scale: 0.4, x: 30, y: 10, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.8")
-        .from('#strawberry01', 1.8, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
-        .from('#kids01', 1.8, {scale: 0.4, rotation: -40, x: -40, y: -20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.8")
-        .from('#raspberry02', 1.8, {scale: 0.4, x: 30, y: -20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
+        .from('#immune01', 1.8, {scale: 0.4, rotation: -40, opacity: 0, ease: Elastic.easeOut.config(0.6, 0.3)}, "-=0.2")
+        .from('#aqua01', 1.8, {scale: 0.4, rotation: 45, x: 30, y: 20, opacity: 0, ease: Elastic.easeOut.config(0.6, 0.3)}, "-=1.6")
+        .from('#currant01', 1.8, {scale: 0.4, x: -40, y: 40, opacity: 0,  ease: Elastic.easeOut.config(0.6, 0.3)}, "-=1.6")
+        .from('#vitality01', 1.8, {scale: 0.4, rotation: -45, x: -30, y: 20, opacity: 0,  ease: Elastic.easeOut.config(0.6, 0.3)}, "-=1.8")
+        .from('#kids01', 1.8, {scale: 0.4, rotation: 50, x: 30, y: -40, opacity: 0,  ease: Elastic.easeOut.config(0.6, 0.3)}, "-=1.8")
+        .from('#raspberry01', 1.8, {scale: 0.4, x: -30, y: -20, opacity: 0,  ease: Elastic.easeOut.config(0.6, 0.3)}, "-=1.6")
+        .from('#strawberry01', 1.8, {scale: 0.4, x: 30, y: 40, opacity: 0,  ease: Elastic.easeOut.config(0.6, 0.3)}, "-=1.6")
 
-
-        .from("#corner02", 0.3, { x: 800 }, "+=1")
+        .from("#corner02", 0.3, { x: 420 }, "+=1")
         .from("#bg02", 0.1, { opacity: 0 })
-        .to("#corner02", 0.3, { x: 470}, "+=0.1")
+        .to("#corner02", 0.3, { x: 315}, "+=0.1")
         .from("#pack02", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
         .from("#txt02", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
 
-        .from("#corner03", 0.3, { x: 800 }, "+=1.4")
+        .from("#corner03", 0.3, { x: 420 }, "+=1.4")
         .from("#bg03", 0.1, { opacity: 0 })
-        .to("#corner03", 0.3, { x: 470}, "+=0.1")
+        .to("#corner03", 0.3, { x: 315}, "+=0.1")
         .from("#pack03", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
         .from("#txt03", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
 
-        .from("#corner04", 0.3, { x: 800 }, "+=1.4")
+        .from("#corner04", 0.3, { x: 420 }, "+=1.4")
         .from("#bg04", 0.1, { opacity: 0 })
-        .to("#corner04", 0.3, { x: 470}, "+=0.1")
+        .to("#corner04", 0.3, { x: 315}, "+=0.1")
         .from("#pack04", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
         .from("#txt04", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
 
-        .from("#corner05", 0.3, { x: 800 }, "+=1.4")
+        .from("#corner05", 0.3, { x: 420 }, "+=1.4")
         .from("#bg05", 0.1, { opacity: 0 })
-        .to("#corner05", 0.3, { x: 470}, "+=0.2")
+        .to("#corner05", 0.3, { x: 315}, "+=0.2")
         .from("#pack05", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
         .from("#txt05", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
 
-        .from("#corner06", 0.4, { x: 800 }, "+=1.4")
+        .from("#corner06", 0.4, { x: 420 }, "+=1.4")
         
         .from("#bg06", 0.1, { opacity: 0 })
-        .to("#corner06", 0.5, { x: 800})
+        .to("#corner06", 0.5, { x: 420})
         .from("#tick", 0.3, { opacity: 0 }, "-=0.2")
         .from("#txt06", 0.3, { scale: 0.6, opacity: 0 }, "-=0.1")
         .from("#vitrum02", 0.3, { scale: 1.2, opacity: 0 }, "-=0.1")
@@ -65,16 +63,14 @@
         .from('#kids06', 0.5, {scale: 0.7, rotation: 45,  opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
         .from('#immune06', 0.5, {scale: 0.7, rotation: 45,  opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
         .from('#aqua06', 0.5, {scale: 0.7, rotation: 45,  opacity: 0,  ease: Back.easeOut.config(2)}, "-=0.2")
-
+        
         .to("#txt06", 0.3, { scale: 0.6, opacity: 0 }, "+=1.4")
-        .to("#tick", 0.3, { opacity: 0 }, "-=0.3")
         .to("#line02", 0.3, { width: 0 }, "-=0.3")
-        .to("#vitrum02", 0.3, { scale: 0.45, y: -59, x: -94 }, "-=0.1")
-
-        .to('#vitality06', 0.3, {scale: 0.6, x: 225, y: -176}, "-=0.2")
-        .to('#kids06', 0.3, {scale: 0.6, x: 153, y: -101}, "-=0.3")
-        .to('#immune06', 0.3, {scale: 0.6, x: 79, y: -22}, "-=0.3")
-        .to('#aqua06', 0.3, {scale: 0.6, x: 5, y: 56}, "-=0.3")
+        .to("#vitrum02", 0.5, { scale: 0.62, x: -116, y: -20 }, "-=0.1")
+        .to('#vitality06', 0.3, {scale: 0.7, x: -21, y: 9}, "-=0.2")
+        .to('#kids06', 0.3, {scale: 0.7, x: -34, y: 9}, "-=0.3")
+        .to('#immune06', 0.5, {scale: 0.7, x: -167, y: 9}, "-=0.5")
+        .to('#aqua06', 0.5, {scale: 0.7, x: -183, y: 9}, "-=0.5")
         .from("#legal01", 0.3, { opacity: 0, y: 10 }, "-=0.1")
         .from("#legal02", 0.3, { opacity: 0 }, "-=0.1")
 
@@ -104,24 +100,20 @@
         <div id="currant01" class="el">
           <img src="01currant.png" />
         </div>
-        <div id="immune01" class="el">
-          <img src="01immune.png" />
-        </div>
-        <div id="strawberry01" class="el">
-          <img src="01strawberry.png" />
+        <div id="vitality01" class="el">
+          <img src="01vitality.png" />
         </div>
         <div id="raspberry01" class="el">
           <img src="01raspberry.png" />
         </div>
-        <div id="vitality01" class="el">
-          <img src="01vitality.png" />
+        <div id="immune01" class="el">
+          <img src="01immune.png" />
         </div>
         <div id="kids01" class="el">
           <img src="pack_kids.png" />
         </div>
-
-        <div id="raspberry02" class="el">
-          <img src="01raspberry.png" />
+        <div id="strawberry01" class="el">
+          <img src="01strawberry.png" />
         </div>
         
         <div id="bg02" class="el bg">
@@ -178,9 +170,6 @@
 
         <div id="bg06" class="el bg">
           <img src="bg01.jpg" alt="">
-        </div>
-        <div id="tick" class="el">
-          <img src="tick.svg" alt="">
         </div>
         <div id="txt06" class="el">
           <img src="txt06.svg" />

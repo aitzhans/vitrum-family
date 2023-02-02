@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="tweenlite_2.0.1_min.js"></script>
+    <script src="cssplugin_2.0.1_min.js"></script>
+    <script src="timelinemax_2.0.1_min.js"></script>
+    <script src="easepack_2.0.1_min.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        var tl = new TimelineMax({ repeat: -1, repeatDelay: 3});
+        tl
+        .from('#immune01', 1.8, {scale: 0.4, rotation: -40, opacity: 0, ease: Elastic.easeOut.config(0.7, 0.3)}, "-=0.2")
+        .from('#aqua01', 1.8, {scale: 0.4, rotation: 45, x: 60, y: 20, opacity: 0, ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
+        .from('#currant01', 1.8, {scale: 0.4, x: -40, y: 40, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
+        .from('#vitality01', 1.8, {scale: 0.4, rotation: -45, x: -60, y: 20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.8")
+        .from('#raspberry01', 1.8, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.8")
+        .from('#strawberry01', 1.8, {scale: 0.4, x: -60, y: -20, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.6")
+        .from('#kids01', 1.8, {scale: 0.4, rotation: 50, x: 60, y: -40, opacity: 0,  ease: Elastic.easeOut.config(0.7, 0.3)}, "-=1.8")
+      });
+    </script>
+  </head>
+  <body>
+      <div class="container">
+        <div id="aqua01" class="el">
+          <img src="01aqua.png" />
+        </div>
+        <div id="currant01" class="el">
+          <img src="01currant.png" />
+        </div>
+        <div id="vitality01" class="el">
+          <img src="01vitality.png" />
+        </div>
+        <div id="raspberry01" class="el">
+          <img src="01raspberry.png" />
+        </div>
+        <div id="immune01" class="el">
+          <img src="01immune.png" />
+        </div>
+        <div id="kids01" class="el">
+          <img src="pack_kids.png" />
+        </div>
+        <div id="strawberry01" class="el">
+          <img src="01strawberry.png" />
+        </div>
+        
+      </div>
+  </body>
+</html>
